@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PluginBlog
+Bundle-SymbolicName: com.plugin.blog.demo;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.plugin.blog.demo.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.views;bundle-version="3.9.0",
+ org.eclipse.ui.forms;bundle-version="3.7.101"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
