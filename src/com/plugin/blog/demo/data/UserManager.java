@@ -18,7 +18,7 @@ public class UserManager {
     private boolean mInitialized;
 
     private UserManager() {
-        // ÏÔÊ¾Êı¾İ£¬ºóÃæÉ¾³ı
+        // æ˜¾ç¤ºæ•°æ®ï¼Œåé¢åˆ é™¤
 //        mData.add(new User("Mike", User.CATEGORY_ARRAY[1]));
 //        mData.add(new User("Tom", User.CATEGORY_ARRAY[2]));
     }

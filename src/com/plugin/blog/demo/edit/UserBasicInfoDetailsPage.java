@@ -21,12 +21,12 @@ public class UserBasicInfoDetailsPage extends AbstractDetailsPage {
     @Override
     protected void createContentInfo(IManagedForm form, Composite parent) {
         FormToolkit toolkit = form.getToolkit();
-        Label sexLabel = toolkit.createLabel(parent, "ÐÔ±ð:");
+        Label sexLabel = toolkit.createLabel(parent, "æ€§åˆ«ï¼š");
         GridData sexGd = new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1); 
         sexLabel.setLayoutData(sexGd);
 
-        mSexBtnList = createChoice(form, parent, new String[]{"ÄÐ", "Å®"}, 0);
-        mText = createText(form, parent, "ÄêÁä");
+        mSexBtnList = createChoice(form, parent, new String[]{"ç”·", "å¥³"}, 0);
+        mText = createText(form, parent, "å¹´é¾„");
     }
 
     @Override

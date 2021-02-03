@@ -18,8 +18,8 @@ public class UserContractInfoPage extends WizardPage implements IWizardPage {
 
     protected UserContractInfoPage() {
         super("UserContractInfoPage");
-        setTitle("ÓÃ»§ÁªÏµĞÅÏ¢");
-        setDescription("ÓÃ»§ÁªÏµĞÅÏ¢×¢ÒâÊÂÏî");
+        setTitle("ç”¨æˆ·è”ç³»ä¿¡æ¯");
+        setDescription("ç”¨æˆ·è”ç³»ä¿¡æ¯æ³¨æ„äº‹é¡¹");
     }
 
     @Override
@@ -30,7 +30,7 @@ public class UserContractInfoPage extends WizardPage implements IWizardPage {
 
         Group group = new Group(container, SWT.NONE);
         group.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, false, 2, 1));
-        group.setText("´´½¨ÓÃ»§");
+        group.setText("åˆ›å»ºç”¨æˆ·");
         GridLayout groupLayout = new GridLayout(2, false);
         groupLayout.marginTop = 10;
         groupLayout.marginLeft = 10;
@@ -40,7 +40,7 @@ public class UserContractInfoPage extends WizardPage implements IWizardPage {
         GridData phoneGd = new GridData(SWT.LEFT, SWT.CENTER, false, false);
         phoneGd.widthHint = 40;
         Label phoneLabel = new Label(group, SWT.NONE);
-        phoneLabel.setText("ÊÖ»úºÅ£º");
+        phoneLabel.setText("æ‰‹æœºå·ï¼š");
         phoneLabel.setLayoutData(phoneGd);
 
         mPhoneText = new Text(group, SWT.BORDER);
@@ -53,7 +53,7 @@ public class UserContractInfoPage extends WizardPage implements IWizardPage {
         });
 
         Label addressLabel = new Label(group, SWT.NONE);
-        addressLabel.setText("×¡Ö·£º");
+        addressLabel.setText("ä½å€ï¼š");
         addressLabel.setLayoutData(new GridData(SWT.LEFT, SWT.CENTER, false, false));
 
         mAddressText = new Text(group, SWT.BORDER);
@@ -70,12 +70,12 @@ public class UserContractInfoPage extends WizardPage implements IWizardPage {
 
     private void checkButtonStatus() {
         if (mPhoneText.getText() == null || mPhoneText.getText().isEmpty()) {
-            setErrorMessage("ÊÖ»úºÅ²»ÄÜÎª¿Õ");
+            setErrorMessage("æ‰‹æœºå·ä¸èƒ½ä¸ºç©º");
             setPageComplete(false);
             return;
         }
         if (mAddressText.getText() == null || mAddressText.getText().isEmpty()) {
-            setErrorMessage("µØÖ·²»ÄÜÎª¿Õ");
+            setErrorMessage("åœ°å€ä¸èƒ½ä¸ºç©º");
             setPageComplete(false);
             return;
         }

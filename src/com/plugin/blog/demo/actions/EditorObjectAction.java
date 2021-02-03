@@ -21,8 +21,8 @@ public class EditorObjectAction implements IObjectActionDelegate {
             UserInfo userInfo = (UserInfo) ss.getFirstElement();
 
             MessageBox mb = new MessageBox(mWorkbenchPart.getSite().getShell());
-            mb.setText("消息");
-            mb.setMessage("用户信息：\n" + userInfo.getText());
+            mb.setText("娑堟伅");
+            mb.setMessage("鐢ㄦ埛娑堟伅锛歕n" + userInfo.getText());
             mb.open();
         }
     }

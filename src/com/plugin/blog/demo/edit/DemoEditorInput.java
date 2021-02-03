@@ -43,7 +43,7 @@ public class DemoEditorInput implements IEditorInput {
 
     @Override
     public String getToolTipText() {
-        return getName() + "ĞÅÏ¢";
+        return getName() + "ä¿¡æ¯";
     }
 
     public UserInfoManager getManager() {

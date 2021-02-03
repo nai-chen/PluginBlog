@@ -23,8 +23,8 @@ public class UserBasicInfoPage extends WizardPage implements IWizardPage {
     protected UserBasicInfoPage() {
         super("UserBasicInfoPage");
 
-        setTitle("ÓÃ»§»ù±¾ĞÅÏ¢");
-        setDescription("ÓÃ»§»ù±¾ĞÅÏ¢×¢ÒâÊÂÏî");
+        setTitle("ç”¨æˆ·åŸºæœ¬ä¿¡æ¯");
+        setDescription("ç”¨æˆ·åŸºæœ¬ä¿¡æ¯æ³¨æ„äº‹é¡¹");
     }
 
     @Override
@@ -37,7 +37,7 @@ public class UserBasicInfoPage extends WizardPage implements IWizardPage {
 
         Group group = new Group(container, SWT.NONE);
         group.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, false, 2, 1));
-        group.setText("ÓÃ»§»ù±¾ĞÅÏ¢");
+        group.setText("ç”¨æˆ·åŸºæœ¬ä¿¡æ¯");
         GridLayout groupLayout = new GridLayout(2, false);
         groupLayout.marginTop = 10;
         groupLayout.marginLeft = 10;
@@ -47,11 +47,11 @@ public class UserBasicInfoPage extends WizardPage implements IWizardPage {
         GridData sexGd = new GridData(SWT.LEFT, SWT.CENTER, false, false);
         sexGd.widthHint = 40;
         Label sexLabel = new Label(group, SWT.NONE);
-        sexLabel.setText("ĞÔ±ğ£º");
+        sexLabel.setText("æ€§åˆ«ï¼š");
         sexLabel.setLayoutData(sexGd);
 
         mSexComb = new Combo(group, SWT.BORDER|SWT.READ_ONLY);
-        mSexComb.setItems(new String[]{"ÄĞ", "Å®"});
+        mSexComb.setItems(new String[]{"ç”·", "å¥³"});
         GridData gd = new GridData(SWT.LEFT, SWT.CENTER, true, false);
         gd.widthHint = 60;
         mSexComb.setLayoutData(gd);
@@ -63,7 +63,7 @@ public class UserBasicInfoPage extends WizardPage implements IWizardPage {
         });
 
         Label ageLabel = new Label(group, SWT.NONE);
-        ageLabel.setText("ÄêÁä£º");
+        ageLabel.setText("å¹´é¾„ï¼š");
         ageLabel.setLayoutData(new GridData(SWT.LEFT, SWT.CENTER, false, false));
 
         mAgeText = new Text(group, SWT.BORDER);
@@ -80,13 +80,13 @@ public class UserBasicInfoPage extends WizardPage implements IWizardPage {
 
     private void checkButtonStatus() {
         if (mSexComb.getText() == null || mSexComb.getText().isEmpty()) {
-            setErrorMessage("ĞÔ±ğ²»ÄÜÎª¿Õ");
+            setErrorMessage("æ€§åˆ«ä¸èƒ½ä¸ºç©º");
             setPageComplete(false);
             return;
         }
 
         if (mAgeText.getText() == null || mSexComb.getText().isEmpty()) {
-            setErrorMessage("ÄêÁä²»ÄÜÎª¿Õ");
+            setErrorMessage("å¹´é¾„ä¸èƒ½ä¸ºç©º");
             setPageComplete(false);
             return;
         }
@@ -94,7 +94,7 @@ public class UserBasicInfoPage extends WizardPage implements IWizardPage {
         try {
             Integer.parseInt(mAgeText.getText());
         } catch (NumberFormatException e) {
-            setErrorMessage("ÄêÁä¸ñÊ½´íÎó");
+            setErrorMessage("å¹´é¾„æ ¼å¼é”™è¯¯");
             setPageComplete(false);
             return;
         }

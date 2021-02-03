@@ -14,8 +14,8 @@ public class OpenViewAction implements IWorkbenchWindowActionDelegate {
 	@Override
 	public void run(IAction action) {
 //		MessageBox mb = new MessageBox(mWindow.getShell());
-//		mb.setText("消息");
-//		mb.setMessage("打开视图");
+//		mb.setText("娑堟伅");
+//		mb.setMessage("鎵撳紑瑙嗗浘");
 //		mb.open();
 		IWorkbenchPage page = mWindow.getActivePage();
         if (page != null) {

@@ -13,8 +13,8 @@ public class UserContractInfoDetailsPage extends AbstractDetailsPage {
 
     @Override
     protected void createContentInfo(IManagedForm form, Composite parent) {
-        mPhoneText = createText(form, parent, "ÊÖ»úºÅ");
-        mAddressText = createText(form, parent, "¼ÒÍ¥µØÖ·");
+        mPhoneText = createText(form, parent, "æ‰‹æœºå·");
+        mAddressText = createText(form, parent, "å®¶åº­åœ°å€");
     }
 
     @Override

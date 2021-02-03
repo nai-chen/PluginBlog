@@ -8,7 +8,7 @@ public class UserContractInfo extends UserInfo {
     private String mAddress;
 
     public UserContractInfo() {
-        super("ÁªÏµĞÅÏ¢", "²é¿´ºÍĞŞ¸ÄÁªÏµĞÅÏ¢");
+        super("è”ç³»ä¿¡æ¯", "æŸ¥çœ‹å’Œä¿®æ”¹è”ç³»ä¿¡æ¯");
     }
 
     public String getPhone() {
@@ -35,8 +35,8 @@ public class UserContractInfo extends UserInfo {
 
     @Override
     public String getText() {
-        return "ÊÖ»úºÅ£º" + ((mPhone != null) ? mPhone : "") + "\n"
-                + "ÁªÏµµØÖ·£º" + ((mAddress != null) ? mAddress : "");
+        return "æ‰‹æœºå·ï¼š" + ((mPhone != null) ? mPhone : "") + "\n"
+                + "è”ç³»åœ°å€ï¼š" + ((mAddress != null) ? mAddress : "");
     }
 
 }

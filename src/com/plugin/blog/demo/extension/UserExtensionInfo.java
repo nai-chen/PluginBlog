@@ -8,7 +8,7 @@ public class UserExtensionInfo extends UserInfo {
     private HashMap<String, String> mContent = new HashMap<>();
 
     public UserExtensionInfo() {
-        super("À©Õ¹ĞÅÏ¢", "ÏÔÊ¾ºÍ²é¿´À©Õ¹ĞÅÏ¢");
+        super("æ‰©å±•ä¿¡æ¯", "æ˜¾ç¤ºå’ŒæŸ¥çœ‹æ‰©å±•ä¿¡æ¯");
     }
 
     public void setValue(String key, String value) {
@@ -28,7 +28,7 @@ public class UserExtensionInfo extends UserInfo {
         String text = "";
         for (UserExtensionInfoItem infoItem :
                 UserExtensionInfoItem.getExtensionInfoList()) {
-            text += infoItem.getName() + "£º" + getValue(infoItem.getId()) + "\n";
+            text += infoItem.getName() + "ï¼š" + getValue(infoItem.getId()) + "\n";
         }
         return text;
     }

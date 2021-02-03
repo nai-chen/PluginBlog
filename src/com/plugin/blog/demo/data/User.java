@@ -5,7 +5,7 @@ import org.eclipse.ui.views.properties.IPropertySource;
 
 public class User implements IAdaptable {
     public final static String[] CATEGORY_ARRAY = 
-            {"朋友", "同事", "同学", "亲属"};
+            {"鏈嬪弸", "鍚屼簨", "鍚屽", "浜插睘"};
 
     private String mName;
     private String mCategory;

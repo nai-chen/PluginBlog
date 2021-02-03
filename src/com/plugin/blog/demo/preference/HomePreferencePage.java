@@ -18,10 +18,10 @@ public class HomePreferencePage extends PreferencePage implements IWorkbenchPref
         container.setLayout(containerLayout);
 
         Label label = new Label(container, SWT.NONE);
-        label.setText("ÓÃ»§ÅäÖÃ");
+        label.setText("ç”¨æˆ·é…ç½®");
 
         label = new Label(container, SWT.NONE);
-        label.setText("ÕâÊÇÓÃ»§ÅäÖÃµÄÊ×Ò³");
+        label.setText("è¿™æ˜¯ç”¨æˆ·é…ç½®çš„é¦–é¡µ");
 
         return container;
 	}

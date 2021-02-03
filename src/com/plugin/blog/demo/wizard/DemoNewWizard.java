@@ -22,7 +22,7 @@ public class DemoNewWizard extends Wizard implements INewWizard {
     private UserContractInfoPage mContractInfoPage;
 
     public DemoNewWizard() {
-        setWindowTitle("新建用户");
+        setWindowTitle("鏂板缓鐢ㄦ埛");
     }
 
     @Override

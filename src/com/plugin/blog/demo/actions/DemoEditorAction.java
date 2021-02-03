@@ -13,8 +13,8 @@ public class DemoEditorAction implements IEditorActionDelegate {
     @Override
     public void run(IAction action) {
         MessageBox mb = new MessageBox(mEditorPart.getSite().getShell());
-        mb.setText("ÏûÏ¢");
-        mb.setMessage("±à¼­Æ÷²Ëµ¥");
+        mb.setText("æ¶ˆæ¯");
+        mb.setMessage("ç¼–è¾‘å™¨èœå•");
         mb.open();
     }
 

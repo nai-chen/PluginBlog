@@ -29,13 +29,13 @@ public class UserPreviewFormPage extends FormPage
     private UserInfoManager mManager;
 
     public UserPreviewFormPage(FormEditor editor) {
-        super(editor, "com.plugin.blog.demo.edit.UserPreviewFormPage", "预览");
+        super(editor, "com.plugin.blog.demo.edit.UserPreviewFormPage", "棰勮");
     }
 
     @Override
     protected void createFormContent(IManagedForm managedForm) {
         ScrolledForm form = managedForm.getForm();
-        form.setText("信息预览");
+        form.setText("淇℃伅棰勮");
         form.setBackgroundImage(ImageKeys.getImageDescriptor(
                 ImageKeys.IMAGE_FORM_BANNER).createImage());
         FormToolkit toolkit = managedForm.getToolkit();
@@ -77,7 +77,7 @@ public class UserPreviewFormPage extends FormPage
         }
     }
 
-    // 数据模型修改后，刷新当前界面
+    // 鏁版嵁妯″瀷淇敼鍚庯紝鍒锋柊褰撳墠鐣岄潰
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
         updateSelection();

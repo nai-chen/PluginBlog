@@ -8,7 +8,7 @@ public class UserBasicInfo extends UserInfo {
     private int mAge;
 
     public UserBasicInfo() {
-        super("ª˘±æ–≈œ¢", "œ‘ æ∫Õ≤Èø¥ª˘±æ–≈œ¢");
+        super("Âü∫Êú¨‰ø°ÊÅØ", "ÊòæÁ§∫ÂíåÊü•ÁúãÂü∫Êú¨‰ø°ÊÅØ");
     }
 
     public boolean isMale() {
@@ -33,8 +33,8 @@ public class UserBasicInfo extends UserInfo {
 
     @Override
     public String getText() {
-        return "–‘±£∫" + (mMale ? "ƒ–" : "≈Æ") + "\n"
-                + "ƒÍ¡‰£∫" + (mAge > 0 ? (mAge + "ÀÍ") : "");
+        return "ÊÄßÂà´Ôºö" + (mMale ? "Áî∑" : "Â•≥") + "\n"
+                + "Âπ¥ÈæÑÔºö" + (mAge > 0 ? (mAge + "Â≤Å") : "");
     }
 
 }

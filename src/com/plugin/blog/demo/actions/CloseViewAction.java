@@ -12,8 +12,8 @@ public class CloseViewAction implements IWorkbenchWindowActionDelegate {
 	@Override
 	public void run(IAction action) {
         MessageBox mb = new MessageBox(mWindow.getShell());
-        mb.setText("消息");
-        mb.setMessage("关闭视图");
+        mb.setText("娑堟伅");
+        mb.setMessage("鍏抽棴瑙嗗浘");
         mb.open();
 	}
 

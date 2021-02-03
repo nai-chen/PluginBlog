@@ -17,8 +17,8 @@ public class UserInfoAction implements IViewActionDelegate {
 	public void run(IAction action) {
 		if (mView != null && mUser != null) {
             MessageBox mb = new MessageBox(mView.getSite().getShell());
-            mb.setText("ÏûÏ¢");
-            mb.setMessage("ÓÃ»§" + mUser.getName() + "±»Ñ¡Ôñ£¡");
+            mb.setText("æ¶ˆæ¯");
+            mb.setMessage("ç”¨æˆ·" + mUser.getName() + "è¢«é€‰æ‹©ï¼");
             mb.open();
         }
 	}

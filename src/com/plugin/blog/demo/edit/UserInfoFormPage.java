@@ -34,14 +34,14 @@ public class UserInfoFormPage extends FormPage {
     private UserInfoBlock mBlock;
 
     public UserInfoFormPage(FormEditor formEditor) {
-        super(formEditor, "com.plugin.blog.demo.edit.UserInfoFormPage", "±à¼­");
+        super(formEditor, "com.plugin.blog.demo.edit.UserInfoFormPage", "ç¼–è¾‘");
         mBlock = new UserInfoBlock(this);
     }
 
     @Override
     protected void createFormContent(IManagedForm managedForm) {
         ScrolledForm form = managedForm.getForm();
-        form.setText("±à¼­¸öÈËĞÅÏ¢");
+        form.setText("ç¼–è¾‘ä¸ªäººä¿¡æ¯");
         form.setBackgroundImage(ImageKeys.getImageDescriptor(
                 ImageKeys.IMAGE_FORM_BANNER).createImage());
 
@@ -65,8 +65,8 @@ public class UserInfoFormPage extends FormPage {
             FormToolkit toolkit = managedForm.getToolkit();
             Section section = toolkit.createSection(parent,
                     Section.DESCRIPTION | Section.TITLE_BAR);
-            section.setText("ĞÅÏ¢ÁĞ±í");
-            section.setDescription("°üÀ¨»ù±¾ĞÅÏ¢¡¢ÁªÏµ·½Ê½ºÍÆäËûĞÅÏ¢");
+            section.setText("ä¿¡æ¯åˆ—è¡¨");
+            section.setDescription("åŒ…æ‹¬åŸºæœ¬ä¿¡æ¯ã€è”ç³»æ–¹å¼å’Œå…¶ä»–ä¿¡æ¯");
             section.marginHeight = 5;
 
             Composite compUserInfo = toolkit.createComposite(section, SWT.WRAP);
@@ -100,8 +100,8 @@ public class UserInfoFormPage extends FormPage {
 
         @Override
         protected void registerPages(DetailsPart detailsPart) {
-            // ºÍÉÏÃæµÄmanagedForm.fireSelectionChanged()·½·¨Ïà¶ÔÓ¦
-            // ×îÖÕ»áµ÷ÓÃSelection.element.getClass¶ÔÓ¦µÄIDetailsPage
+            // å’Œä¸Šé¢çš„managedForm.fireSelectionChanged()æ–¹æ³•ç›¸å¯¹åº”
+            // æœ€ç»ˆä¼šè°ƒç”¨Selection.element.getClasså¯¹åº”çš„IDetailsPage
             detailsPart.registerPage(UserBasicInfo.class, mBasicInfoDetailPage);
             detailsPart.registerPage(UserContractInfo.class, mContractInfoDetailsPage);
             detailsPart.registerPage(UserExtensionInfo.class, mExtensionInoDetailsPage);

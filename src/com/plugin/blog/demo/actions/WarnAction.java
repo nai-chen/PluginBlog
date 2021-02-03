@@ -10,15 +10,15 @@ public class WarnAction extends Action {
 	private IViewPart mPart;
  
 	public WarnAction(IViewPart targetPart) {
-		super("¾¯¸æ", ImageKeys.getImageDescriptor(ImageKeys.IMAGE_WARN));
+		super("è­¦å‘Š", ImageKeys.getImageDescriptor(ImageKeys.IMAGE_WARN));
 		this.mPart = targetPart;
 	}
  
 	@Override
 	public void run() {
 		MessageBox mb = new MessageBox(mPart.getSite().getShell());
-		mb.setText("¾¯¸æ");
-		mb.setMessage("¾¯¸æ");
+		mb.setText("è­¦å‘Š");
+		mb.setMessage("è­¦å‘Š");
 		mb.open();
 	}
 	

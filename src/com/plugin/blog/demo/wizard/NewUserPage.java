@@ -24,8 +24,8 @@ public class NewUserPage extends WizardPage implements IWizardPage {
 
     protected NewUserPage() {
         super("NewUserPage");
-        setTitle("ĞÂ½¨ÓÃ»§");
-        setDescription("ÉèÖÃ×¢ÒâÊÂÏî");
+        setTitle("æ–°å»ºç”¨æˆ·");
+        setDescription("è®¾ç½®æ³¨æ„äº‹é¡¹");
     }
 
     @Override
@@ -36,7 +36,7 @@ public class NewUserPage extends WizardPage implements IWizardPage {
 
         Group group = new Group(container, SWT.NONE);
         group.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, false, 2, 1));
-        group.setText("´´½¨ÓÃ»§");
+        group.setText("åˆ›å»ºç”¨æˆ·");
         GridLayout groupLayout = new GridLayout(2, false);
         groupLayout.marginTop = 10;
         groupLayout.marginLeft = 10;
@@ -46,7 +46,7 @@ public class NewUserPage extends WizardPage implements IWizardPage {
         GridData nameGd = new GridData(SWT.LEFT, SWT.CENTER, false, false);
         nameGd.widthHint = 40;
         Label nameLabel = new Label(group, SWT.NONE);
-        nameLabel.setText("ĞÕÃû£º");
+        nameLabel.setText("å§“åï¼š");
         nameLabel.setLayoutData(nameGd);
 
         mNameText = new Text(group, SWT.BORDER);
@@ -59,7 +59,7 @@ public class NewUserPage extends WizardPage implements IWizardPage {
         });
 
         Label ageLabel = new Label(group, SWT.NONE);
-        ageLabel.setText("Àà±ğ£º");
+        ageLabel.setText("ç±»åˆ«ï¼š");
         ageLabel.setLayoutData(new GridData(SWT.LEFT, SWT.CENTER, false, false));
 
         mCategoryCombo = new Combo(group, SWT.BORDER|SWT.READ_ONLY);
@@ -79,7 +79,7 @@ public class NewUserPage extends WizardPage implements IWizardPage {
 
     private void checkButtonStatus() {
         if (mNameText.getText() == null || mNameText.getText().isEmpty()) {
-            setErrorMessage("ĞÕÃû²»ÄÜÎª¿Õ");
+            setErrorMessage("å§“åä¸èƒ½ä¸ºç©º");
             setPageComplete(false);
             return;
         }
@@ -88,14 +88,14 @@ public class NewUserPage extends WizardPage implements IWizardPage {
         for (Object obj : UserManager.getInstance().getElements()) {
             User user = (User)obj;
             if (user.getName().equals(name)) {
-                setErrorMessage("¸ÃĞÕÃûÒÑ¾­´æÔÚ");
+                setErrorMessage("è¯¥å§“åå·²ç»å­˜åœ¨");
                 setPageComplete(false);
                 return;
             }
         }
 
         if (mCategoryCombo.getText() == null || mCategoryCombo.getText().isEmpty()) {
-            setErrorMessage("Àà±ğ²»ÄÜÎª¿Õ");
+            setErrorMessage("ç±»åˆ«ä¸èƒ½ä¸ºç©º");
             setPageComplete(false);
             return;
         }

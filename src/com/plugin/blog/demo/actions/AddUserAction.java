@@ -20,7 +20,7 @@ public class AddUserAction implements IViewActionDelegate {
     public void run(IAction action) {
         if (mViewPart != null) {
 //            InputDialog dialog = new InputDialog(mViewPart.getViewSite().getShell(),
-//                "Ìí¼ÓÓÃ»§", "ÊäÈëÓÃ»§Ãû£º", "", null);
+//                "æ·»åŠ ç”¨æˆ·", "è¾“å…¥ç”¨æˆ·å", "", null);
 //            dialog.open();
 //            String value = dialog.getValue();
 //            if (value != null && value.length() > 0) {

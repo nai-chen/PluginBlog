@@ -13,14 +13,14 @@ public class UserInfoPreferencePage extends FieldEditorPreferencePage implements
     public UserInfoPreferencePage() {
         super(GRID);
         setPreferenceStore(Activator.getDefault().getPreferenceStore());
-        setDescription("用户信息配置");
+        setDescription("鐢ㄦ埛淇℃伅閰嶇疆");
     }
 
     @Override
     protected void createFieldEditors() {
         Composite parent = getFieldEditorParent();
         addField(new BooleanFieldEditor(PreferenceConstants.P_SHOW_PREVIEW, 
-            "显示预览分页", parent));
+            "鏄剧ず棰勮鍒嗛〉", parent));
     }
 
     @Override

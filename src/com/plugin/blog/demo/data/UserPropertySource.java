@@ -23,9 +23,9 @@ public class UserPropertySource implements IPropertySource {
 
 	@Override
 	public IPropertyDescriptor[] getPropertyDescriptors() {
-		TextPropertyDescriptor namePropertyDescriptor = new TextPropertyDescriptor(PROPERTY_NAME, "–’√˚");
+		TextPropertyDescriptor namePropertyDescriptor = new TextPropertyDescriptor(PROPERTY_NAME, "ÂßìÂêç");
 
-		ComboBoxPropertyDescriptor agePropertyDescriptor = new ComboBoxPropertyDescriptor(PROPERTY_CATEGORY, "¿‡±",
+		ComboBoxPropertyDescriptor agePropertyDescriptor = new ComboBoxPropertyDescriptor(PROPERTY_CATEGORY, "Á±ªÂà´",
 				User.CATEGORY_ARRAY);
 		agePropertyDescriptor.setLabelProvider(new LabelProvider() {
 			@Override

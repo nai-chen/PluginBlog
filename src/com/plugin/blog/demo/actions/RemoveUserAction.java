@@ -22,7 +22,7 @@ public class RemoveUserAction implements IObjectActionDelegate {
                 User user = (User) ss.getFirstElement();
                 boolean result = MessageDialog.openConfirm(
                         mWorkbenchPart.getSite().getShell(), 
-                        "É¾³ıÓÃ»§", "ÄúÊÇ·ñÈ·ÈÏÉ¾³ı" + user.getName() + "?");
+                        "åˆ é™¤ç”¨æˆ·", "æ‚¨æ˜¯å¦ç¡®è®¤åˆ é™¤" + user.getName() + "?");
                 if (result) {
                     UserManager.getInstance().removeObject(user);
                 }
