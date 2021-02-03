@@ -64,11 +64,13 @@ public class UserManager {
         if (mInitialized) {        	
             return;
         }
-        IMemento[] children = memento.getChildren("UserManager");
-        if (children != null) {
-            for (IMemento child : children) {
-                addObject(new User(child.getString("name"), child.getString("category")));
-            }
+        if (memento != null) {
+	        IMemento[] children = memento.getChildren("UserManager");
+	        if (children != null) {
+	            for (IMemento child : children) {
+	                addObject(new User(child.getString("name"), child.getString("category")));
+	            }
+	        }
         }
         mInitialized = true;
     }
